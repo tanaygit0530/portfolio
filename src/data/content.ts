@@ -11,7 +11,7 @@ export const site = {
   description:
     "Tanay Patil is a B.Tech IT student at VESIT (CGPA 9.03) and a full-stack developer in Mumbai who ships AI-powered products — MERN apps, agentic AI automation and OCR document scanning.",
   // Update this after the first Vercel deploy if you add a custom domain.
-  url: "https://tanay-patil.vercel.app",
+  url: "https://tanay-patil-portfolio.vercel.app",
 };
 
 export const links = {
