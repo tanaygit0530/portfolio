@@ -10,7 +10,7 @@ All text, links and project data live in **`src/data/content.ts`**. Components n
 
 | File | What it is |
 | --- | --- |
-| `public/portrait.png` | Hero portrait (background removed, transparent PNG). Grayscale + fade are applied in CSS. |
+| `public/portrait-bw.png` | Hero portrait (transparent PNG; path set in `content.ts`). Grayscale + fade are applied in CSS. |
 | `public/projects/nagarvaani.png` | Placeholder mockup → swap for a real NagarVaani screenshot (4:3 works best) |
 | `public/projects/nexusagent.png` | Placeholder mockup → NexusAgent dashboard screenshot |
 | `public/projects/wastec.png` | Placeholder mockup → WAStec store screenshot |

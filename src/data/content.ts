@@ -35,7 +35,7 @@ export const hero = {
   statement: "I build real-world products that solve practical problems.",
   focus: ["MERN Stack", "React & Tailwind", "Agentic AI", "OCR & Automation", "Hackathons"],
   portrait: {
-    src: "/portrait.png",
+    src: "/portrait-bw.png",
     alt: "Black-and-white portrait of Tanay Patil",
   },
 };
