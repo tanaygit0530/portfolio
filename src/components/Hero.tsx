@@ -21,11 +21,11 @@ export function Hero() {
             <Image
               src={hero.portrait.src}
               alt={hero.portrait.alt}
-              width={880}
-              height={837}
+              width={hero.portrait.width}
+              height={hero.portrait.height}
               priority
               sizes="(min-width: 1024px) 440px, 74vw"
-              className="h-auto w-full select-none [filter:grayscale(1)_contrast(1.1)] [mask-image:linear-gradient(to_bottom,#000_62%,transparent_96%)]"
+              className="h-auto w-full select-none [filter:grayscale(1)_contrast(1.1)] [mask-image:linear-gradient(to_bottom,#000_88%,transparent_100%)]"
             />
           </div>
 
