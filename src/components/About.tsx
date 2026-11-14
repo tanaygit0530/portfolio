@@ -1,7 +1,7 @@
 import { about } from "@/data/content";
 import { Reveal } from "./Reveal";
 import { StatGrid } from "./StatGrid";
-import { ArrowLink, Container, Display } from "./ui";
+import { ArrowLink, Container, Display, pillBase } from "./ui";
 
 export function About() {
   return (
@@ -24,7 +24,30 @@ export function About() {
           </Reveal>
         </div>
 
-        <div className="mt-10 md:mt-16">
+        <div className="mt-12 grid gap-8 border-t border-line pt-10 md:mt-20 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] md:gap-16 md:pt-14">
+          <Reveal>
+            <p className="label text-muted">{about.more.label}</p>
+            <p className="metal mt-4 font-display text-[clamp(1.35rem,2.6vw,2.25rem)] font-light uppercase leading-[1.15] tracking-[-0.06em]">
+              {about.more.intro}
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="space-y-4 text-[15px] leading-relaxed text-ink/80 md:text-base">
+              {about.more.paragraphs.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+            <ul className="mt-6 flex flex-wrap gap-2" aria-label="Interests">
+              {about.more.interests.map((i) => (
+                <li key={i} className={`${pillBase} border-line`}>
+                  {i}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
+
+        <div className="mt-12 md:mt-16">
           <StatGrid items={about.stats} cols="grid-cols-3" />
         </div>
       </Container>

@@ -51,6 +51,16 @@ export const about = {
     { value: "2", label: "Internships" },
     { value: "4", label: "Hackathon podiums & finals" },
   ],
+  more: {
+    label: "More about me",
+    intro: "I build things that work in the real world — then I go find a trail.",
+    paragraphs: [
+      "I'm Tanay Patil, a full-stack developer from Mumbai and a B.Tech IT student at VESIT. I enjoy taking messy, real-world problems and turning them into products people actually use — whether that's OCR document scanning for an enterprise workflow or an AI platform that makes civic complaints easier to track.",
+      "I've taken part in 20+ hackathons, and they're where I learn fastest: tight deadlines, new teammates and a demo that simply has to work. A few of those weekends ended on the podium, including 1st runner-up at SYRUS 7.0 and 2nd runner-up at Genesis 2.0.",
+      "Away from the keyboard, I'm happiest on a trek or exploring somewhere new. Travelling keeps me curious, and that curiosity usually finds its way back into what I build. At ISTE VESIT I also help run technical workshops and guide participants hands-on.",
+    ],
+    interests: ["20+ hackathons", "Trekking", "Exploring new places", "Travelling", "Tech workshops"],
+  },
 };
 
 export type Project = {
