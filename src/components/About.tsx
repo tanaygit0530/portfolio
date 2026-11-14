@@ -7,31 +7,25 @@ export function About() {
   return (
     <section id="about" aria-labelledby="about-heading" className="py-12 md:py-20">
       <Container>
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
-          <Reveal className="relative w-fit">
-            <Display id="about-heading" className="text-[clamp(2.6rem,7.4vw,6rem)]">
-              {about.heading}
-            </Display>
-            <ArrowLink
-              href="#projects"
-              dir="up-right"
-              label="Jump to featured projects"
-              className="absolute -bottom-3 -right-14 md:-bottom-5 md:-right-8"
-            />
-          </Reveal>
-          <Reveal delay={0.1} className="md:max-w-[440px]">
-            <blockquote className="label font-medium text-ink">“{about.quote}”</blockquote>
-          </Reveal>
-        </div>
-
-        <div className="mt-12 grid gap-8 border-t border-line pt-10 md:mt-20 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] md:gap-16 md:pt-14">
-          <Reveal>
-            <p className="label text-muted">{about.more.label}</p>
-            <p className="metal mt-4 font-display text-[clamp(1.35rem,2.6vw,2.25rem)] font-light uppercase leading-[1.15] tracking-[-0.06em]">
+        <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] md:gap-16">
+          <Reveal className="md:sticky md:top-28 md:self-start">
+            <div className="relative w-fit">
+              <Display id="about-heading" className="text-[clamp(2.6rem,7.4vw,6rem)]">
+                {about.heading}
+              </Display>
+              <ArrowLink
+                href="#projects"
+                dir="up-right"
+                label="Jump to featured projects"
+                className="absolute -bottom-3 -right-14 md:-bottom-5 md:-right-8"
+              />
+            </div>
+            <p className="label mt-10 text-muted md:mt-14">{about.more.label}</p>
+            <p className="metal mt-4 max-w-[460px] font-display text-[clamp(1.35rem,2.6vw,2.25rem)] font-light uppercase leading-[1.15] tracking-[-0.06em]">
               {about.more.intro}
             </p>
           </Reveal>
-          <Reveal delay={0.1}>
+          <Reveal delay={0.1} className="md:pt-3">
             <div className="space-y-4 text-[15px] leading-relaxed text-ink/80 md:text-base">
               {about.more.paragraphs.map((p) => (
                 <p key={p}>{p}</p>

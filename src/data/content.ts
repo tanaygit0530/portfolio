@@ -44,8 +44,6 @@ export const hero = {
 
 export const about = {
   heading: "About",
-  quote:
-    "Tanay Patil is a B.Tech IT student at VESIT (CGPA 9.03) and a full-stack developer who ships AI-powered products — from OCR document scanning at Electrolyte Solutions to award-winning hackathon builds.",
   stats: [
     { value: "9.03", label: "CGPA at VESIT" },
     { value: "2", label: "Internships" },

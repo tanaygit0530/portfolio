@@ -95,7 +95,7 @@ export function Navbar() {
                   <a
                     href={item.href}
                     aria-current={isActive ? "location" : undefined}
-                    className={`${pillBase} min-w-[92px] py-1.5 lg:min-w-[108px] ${
+                    className={`${pillBase} whitespace-nowrap px-3 py-1.5 lg:min-w-[108px] lg:px-4 ${
                       isActive
                         ? "border-ink bg-ink text-paper"
                         : "border-line bg-paper hover:border-ink"
